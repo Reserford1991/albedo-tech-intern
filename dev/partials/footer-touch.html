@@ -1,0 +1,75 @@
+<div class="container footer-touch">
+
+    <div class="row" id="footer-touch-empty-space-1"></div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="get-in-touch-div"><p class="get-in-touch-p">get in touch</p></div>
+        </div>
+    </div>
+
+    <div class="row" id="footer-touch-empty-space-2"></div>
+
+    <div class="row">
+
+        <div class="col-md-5 col-sm-offset-1 contact-info">
+            <div class="address" id="footer-address">
+                <img src="img/pin.png" alt="map-pointer">
+                <p id="addr-first-line">23 Mulholland Drive, Suite 721. Los Angeles 10010</p>
+                <p id="addr-second-line">100 S. Main Street. Los Angeles 90012</p>
+            </div>
+            <div class="phone" id="footer-phone"><img src="img/iphone.png" alt="map-pointer">
+                <p>+1-670-567-5590</p>
+            </div>
+            <div class="mail" id="footer-mail"><img src="img/envelope.png" alt="map-pointer">
+                <p>hello@clemocreative.com</p>
+            </div>
+            <div id="footer-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="Girl in a jacket"
+                         onmouseover="facebookHover(this);" onmouseout="facebookUnhover(this);">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="img/twitter.png" alt="Girl in a jacket"
+                         onmouseover="twitterHover(this);" onmouseout="twitterUnhover(this);">
+                </a>
+                <a href="https://www.plus.google.com" target="_blank">
+                    <img src="img/google-plus.png" alt="Girl in a jacket"
+                         onmouseover="googleHover(this);" onmouseout="googleUnhover(this);">
+                </a>
+                <a href="https://www.pinterest.com" target="_blank">
+                    <img src="img/pinterest.png" alt="Girl in a jacket"
+                         onmouseover="pinterestHover(this);" onmouseout="pinterestUnhover(this);">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.png" alt="Girl in a jacket"
+                         onmouseover="instagramHover(this);" onmouseout="instagramUnhover(this);">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <form action="" class="feedback-form" id="footer-feedback-form">
+                <label for="firstname" id="first-line-footer-label">name</label>
+                <input type="text" id="footer-feedback-firstname" name="firstname">
+                <label for="mail" id="email-footer-label">e-mail</label>
+                <input type="text" id="footer-feedback-mail" name="mail">
+                <label for="message" id="message-footer-label">your message</label>
+                <input type="text" id="footer-feedback-message" name="message">
+                <div class="footer-feedback-form-line-div" id="footer-feedback-form-line-delimiter">
+                    <div class="footer-feedback-form-line"></div>
+                </div>
+                <input id="footer-feedback-submit" type="submit" value="submit" onclick="submitFeedback(event)">
+            </form>
+
+            <div id="thank-you-div">
+                <div id="footer-touch-empty-space-3"></div>
+                <img id="footer-touch-image-check" src="img/check.png">
+                <p id="footer-thank-you">Thank you!</p>
+                <p id="footer-message-sent">Your message has been sent!</p>
+                <input id="new-message" type="submit" value="new message" onclick="newFeedback(event)">
+            </div>
+        </div>
+
+    </div>
+</div>

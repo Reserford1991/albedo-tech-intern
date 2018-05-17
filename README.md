@@ -1,1 +1,2 @@
-Albedo-tech internship repository.
+gulp install
+https://css-tricks.com/gulp-for-beginners/
