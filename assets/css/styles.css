@@ -1,0 +1,190 @@
+/**/
+
+.container {
+    position: relative;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+/* Style all font awesome icons */
+#formOneHead, #formTwoHead, #shareDiv {
+    text-align: center;
+}
+
+.errorSpanDiv {
+    display: none;
+}
+
+#formOneHead, #formTwoHead {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#legendOne, #legendTwo {
+    font-size: 21px;
+}
+
+#legendOne > p, #legendTwo > p  {
+    margin: 0px;
+}
+
+#nextDiv {
+    display:    inline-block;
+    float: right;
+}
+
+#prevDiv {
+    display:    none;
+    /*display:    inline-block;*/
+    float: left;
+}
+
+#shareText {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 21px;
+}
+
+.allMembers {
+    display: block;
+}
+
+.fa {
+    border-radius: 22px;
+    padding: 9px;
+    font-size: 25px;
+    height: 43px;
+    width: 43px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:link, .fa:visited, .fa:hover, .fa:active {
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google-plus {
+    background: #dd4b39;
+    color: white;
+}
+
+#shareDiv, #partTwo{
+    display: none;
+}
+
+.loaderBackground {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    background-color: white;
+    z-index: 99;
+    opacity: 0.8;
+}
+
+
+.loader {
+    /*display: none;*/
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+
+    position:absolute;
+    top: 45%;
+    left: 45%
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loaderText {
+    display: block;
+    /*display: none;*/
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#photoLabel {
+    padding-top: 0px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
